@@ -62,28 +62,34 @@ h1, h2, h3, h4, h5, h6, .heading {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.1;
+  letter-spacing: 0.03em;
   margin: 0;
 }
 
 .text-huge {
   font-size: clamp(4rem, 10vw, 12rem);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
+  line-height: 0.95;
 }
 
 .text-large {
   font-size: clamp(2rem, 5vw, 6rem);
+  letter-spacing: 0.02em;
 }
 
 .text-medium {
   font-size: clamp(1.5rem, 3vw, 3rem);
-  font-weight: 400;
+  font-weight: 300;
   color: var(--support-silver);
+  letter-spacing: 0.03em;
 }
 
 .text-body {
   font-size: 1.125rem;
+  line-height: 1.7;
   color: var(--text-gray);
   max-width: 600px;
+  font-weight: 300;
 }
 
 /* Layout Utilities */
@@ -144,7 +150,7 @@ h1, h2, h3, h4, h5, h6, .heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  mix-blend-mode: difference;
+  background-color: #000000;
 }
 
 .logo-link {
@@ -152,7 +158,7 @@ h1, h2, h3, h4, h5, h6, .heading {
 }
 
 .logo {
-  height: 40px;
+  height: 80px;
   width: auto;
   object-fit: contain;
 }
@@ -229,25 +235,26 @@ h1, h2, h3, h4, h5, h6, .heading {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-bg {
   position: absolute;
-  top: 0;
+  top: -15%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 130%;
   background-image: url('/images/products/door_1_1.jpeg');
   background-size: cover;
   background-position: center;
   z-index: -2;
-  transform: scale(1.1); /* For parallax */
+  will-change: transform;
 }
 
 .hero-overlay {
@@ -624,7 +631,7 @@ h1, h2, h3, h4, h5, h6, .heading {
 }
 .header.scrolled {
   padding: 1rem 5vw;
-  background-color: rgba(10, 10, 10, 0.95);
+  background-color: #000000;
 }
 
 /* Additional Mobile Adjustments */
@@ -684,9 +691,8 @@ h1, h2, h3, h4, h5, h6, .heading {
 @media (max-width: 1024px) {
   .header {
     padding: 1rem 5vw;
-    background-color: rgba(10, 10, 10, 0.95);
+    background-color: #000000;
     flex-wrap: nowrap;
-    mix-blend-mode: normal;
   }
   .header-actions {
     display: none; /* Hide extra actions to save space */
@@ -710,5 +716,83 @@ h1, h2, h3, h4, h5, h6, .heading {
   }
   .nav-links.active {
     right: 0;
+  }
+}
+
+/* Premium Animation Utilities */
+.image-expand-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-expand-inner {
+  object-fit: cover;
+  transform: scale(1.2);
+  transform-origin: center;
+  will-change: transform;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  width: 100%;
+  height: 130%;
+  object-fit: cover;
+  will-change: transform;
+  z-index: -1;
+}
+
+.layer-visual {
+  position: relative;
+  z-index: 1;
+}
+
+/* New Premium Sections CSS */
+.service-item:hover {
+  background: rgba(0, 229, 255, 0.05) !important;
+  border-color: var(--accent-blue) !important;
+  transform: translateY(-5px);
+}
+
+.process-step:hover h3 {
+  color: var(--accent-blue) !important;
+}
+
+.process-step {
+  transition: all 0.3s ease;
+}
+
+.process-line-progress {
+  transition: height 0.1s ease;
+}
+
+.review-slide {
+  pointer-events: none;
+}
+
+.review-slide.active {
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .why-choose-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .why-choose-image {
+    height: 40vh !important;
+    margin-top: 2rem;
+  }
+  .process-step {
+    padding-left: 40px !important;
+  }
+  .process-steps {
+    gap: 4rem !important;
+  }
+  .process-line {
+    left: 10px !important;
+  }
+  .process-step > div {
+    left: 4px !important;
   }
 }

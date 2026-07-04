@@ -36,7 +36,8 @@
         "item": "https://sheesdoors.com/products.html"
       }]
     }
-    </script></head>
+    </script>  <link rel="icon" type="image/jpeg" href="/logo.jpeg">
+</head>
   <body>
     <div id="preloader" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: var(--bg-deep); z-index: 99999; display: flex; align-items: center; justify-content: center; transition: opacity 0.8s ease, visibility 0.8s ease;">
       <div style="text-align: center;">
@@ -65,7 +66,7 @@
     
     <header class="header">
       <a href="/" class="logo-link hover-target">
-        <img src="/image.png" alt="SHEES Steel Doors" class="logo">
+        <img src="/logo.jpeg" alt="SHEES Steel Doors" class="logo">
       </a>
       
       <div class="hamburger hover-target" id="hamburger">
@@ -91,8 +92,18 @@
 
 
     <main>
+      <section class="hero" id="hero">
+        <div class="parallax-bg" style="background-image: url('/images/products/door_3_1.jpeg'); position: absolute; top: -15%; left: 0; width: 100%; height: 130%; background-size: cover; background-position: center; z-index: -2; will-change: transform;"></div>
+        <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, var(--bg-deep) 0%, rgba(10, 10, 10, 0.4) 50%, rgba(10, 10, 10, 0.8) 100%); z-index: -1;"></div>
+        <div class="hero-content container" style="text-align: center;">
+          <h1 class="hero-title text-huge reveal-text" style="margin: 0 auto; max-width: 100%;">
+            <span><span>THE COLLECTION</span></span>
+          </h1>
+        </div>
+      </section>
+      
       <!-- Categories Section -->
-      <section class="section" style="padding-top: 25vh;">
+      <section class="section" style="">
         <div class="container">
           <h1 class="text-large reveal-text" style="text-align: center; margin-bottom: 5vw;"><span><span>OUR</span></span><span><span>COLLECTIONS.</span></span></h1>
           
@@ -122,8 +133,8 @@
 
           <!-- Product 1 -->
           <div class="exhibition-item">
-            <div class="exhibition-image-wrap hover-target">
-              <img src="/images/products/door_9_1.jpeg" alt="The Obsidian" class="exhibition-image showcase-img">
+            <div class="exhibition-image-wrap hover-target image-expand-wrapper">
+              <img src="/images/products/door_9_1.jpeg" alt="The Obsidian" class="exhibition-image showcase-img image-expand-inner layer-visual">
             </div>
             <div class="exhibition-info fade-in-up">
               <h3>THE OBSIDIAN</h3>
@@ -137,8 +148,8 @@
 
           <!-- Product 2 -->
           <div class="exhibition-item">
-            <div class="exhibition-image-wrap hover-target">
-              <img src="/images/products/door_10_1.jpeg" alt="The Zenith" class="exhibition-image showcase-img">
+            <div class="exhibition-image-wrap hover-target image-expand-wrapper">
+              <img src="/images/products/door_10_1.jpeg" alt="The Zenith" class="exhibition-image showcase-img image-expand-inner layer-visual">
             </div>
             <div class="exhibition-info fade-in-up">
               <h3>THE ZENITH</h3>

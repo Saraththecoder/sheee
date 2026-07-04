@@ -36,7 +36,8 @@
         "item": "https://sheesdoors.com/why-shees.html"
       }]
     }
-    </script></head>
+    </script>  <link rel="icon" type="image/jpeg" href="/logo.jpeg">
+</head>
   <body>
     <div id="preloader" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: var(--bg-deep); z-index: 99999; display: flex; align-items: center; justify-content: center; transition: opacity 0.8s ease, visibility 0.8s ease;">
       <div style="text-align: center;">
@@ -65,7 +66,7 @@
     
     <header class="header">
       <a href="/" class="logo-link hover-target">
-        <img src="/image.png" alt="SHEES Steel Doors" class="logo">
+        <img src="/logo.jpeg" alt="SHEES Steel Doors" class="logo">
       </a>
       
       <div class="hamburger hover-target" id="hamburger">
@@ -91,7 +92,17 @@
 
 
     <main>
-      <section class="section story-section" style="padding-top: 25vh;">
+      <section class="hero" id="hero">
+        <div class="parallax-bg" style="background-image: url('/images/products/door_4_1.jpeg'); position: absolute; top: -15%; left: 0; width: 100%; height: 130%; background-size: cover; background-position: center; z-index: -2; will-change: transform;"></div>
+        <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, var(--bg-deep) 0%, rgba(10, 10, 10, 0.4) 50%, rgba(10, 10, 10, 0.8) 100%); z-index: -1;"></div>
+        <div class="hero-content container" style="text-align: center;">
+          <h1 class="hero-title text-huge reveal-text" style="margin: 0 auto; max-width: 100%;">
+            <span><span>WHY SHEES</span></span>
+          </h1>
+        </div>
+      </section>
+      
+      <section class="section story-section" style="">
         <div class="container">
           <h1 class="text-large reveal-text" style="text-align: center; margin-bottom: 5vw;"><span><span>WHY CHOOSE</span></span><span><span>SHEES?</span></span></h1>
           
@@ -99,43 +110,43 @@
           <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2vw;">
             
             <div class="fade-in-up hover-target" style="padding: 2rem; background: var(--bg-graphite); border-top: 3px solid var(--accent-blue); transition: transform 0.3s ease;">
-              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
               <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem;">Premium Materials</h3>
               <p class="text-body">Aerospace-grade steel and refined structural alloys.</p>
             </div>
             
             <div class="fade-in-up hover-target" style="padding: 2rem; background: var(--bg-graphite); border-top: 3px solid var(--support-silver); transition: transform 0.3s ease;">
-              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></div>
+              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg></div>
               <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem;">Modern Designs</h3>
               <p class="text-body">Minimalist aesthetics for architectural excellence.</p>
             </div>
             
             <div class="fade-in-up hover-target" style="padding: 2rem; background: var(--bg-graphite); border-top: 3px solid var(--accent-blue); transition: transform 0.3s ease;">
-              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
               <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem;">Maximum Security</h3>
               <p class="text-body">Multi-point locking and vault-grade hinges.</p>
             </div>
             
             <div class="fade-in-up hover-target" style="padding: 2rem; background: var(--bg-graphite); border-top: 3px solid var(--support-silver); transition: transform 0.3s ease;">
-              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></div>
+              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path></svg></div>
               <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem;">Elegant Finish</h3>
               <p class="text-body">Weather-resistant, luxury powder coating.</p>
             </div>
             
             <div class="fade-in-up hover-target" style="padding: 2rem; background: var(--bg-graphite); border-top: 3px solid var(--accent-blue); transition: transform 0.3s ease;">
-              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gem"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13"/><path d="M13 3l3 6-4 13"/></svg></div>
+              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gem"><path d="M6 3h12l4 6-10 13L2 9Z"></path><path d="M11 3 8 9l4 13"></path><path d="M13 3l3 6-4 13"></path></svg></div>
               <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem;">Affordable Pricing</h3>
               <p class="text-body">Direct-from-forge pricing with no middleman.</p>
             </div>
             
             <div class="fade-in-up hover-target" style="padding: 2rem; background: var(--bg-graphite); border-top: 3px solid var(--support-silver); transition: transform 0.3s ease;">
-              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a4.3 4.3 0 0 0 6-6l-1.5-1.5a4.3 4.3 0 0 0-6 6"/><path d="m15 8 2 2"/><path d="M17 11l6-6"/><path d="m4 11 5.5 5.5a4.3 4.3 0 1 1-6-6l1.5-1.5a4.3 4.3 0 0 1 6-6"/><path d="m5 13 2-2"/><path d="M7 16l-6 6"/></svg></div>
+              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake"><path d="m11 17 2 2a1 1 0 1 0 3-3"></path><path d="m14 14 2.5 2.5a4.3 4.3 0 0 0 6-6l-1.5-1.5a4.3 4.3 0 0 0-6 6"></path><path d="m15 8 2 2"></path><path d="M17 11l6-6"></path><path d="m4 11 5.5 5.5a4.3 4.3 0 1 1-6-6l1.5-1.5a4.3 4.3 0 0 1 6-6"></path><path d="m5 13 2-2"></path><path d="M7 16l-6 6"></path></svg></div>
               <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem;">Professional Service</h3>
               <p class="text-body">White-glove delivery and installation.</p>
             </div>
             
             <div class="fade-in-up hover-target" style="padding: 2rem; background: var(--bg-graphite); border-top: 3px solid var(--accent-blue); transition: transform 0.3s ease;">
-              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></div>
+              <div style="font-size: 2.5rem; margin-bottom: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg></div>
               <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem;">Reliable Support</h3>
               <p class="text-body">Lifetime structural warranties and 24/7 care.</p>
             </div>
@@ -147,8 +158,8 @@
       <!-- Premium Features -->
       <section class="section" style="padding: 10vw 0; background: var(--bg-graphite);">
         <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 5vw; align-items: center;">
-          <div class="story-image-wrap">
-            <div class="story-image" style="background-image: url('/images/products/door_2_1.jpeg');"></div>
+          <div class="story-image-wrap image-expand-wrapper">
+            <div class="story-image image-expand-inner layer-visual" style="background-image: url('/images/products/door_2_1.jpeg');"></div>
           </div>
           <div>
             <h2 class="text-medium reveal-text" style="margin-bottom: 2rem;"><span><span>UNCOMPROMISING</span></span><span><span>FEATURES.</span></span></h2>

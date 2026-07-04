@@ -63,7 +63,8 @@
         "item": "https://sheesdoors.com/gallery.html"
       }]
     }
-    </script></head>
+    </script>  <link rel="icon" type="image/jpeg" href="/logo.jpeg">
+</head>
   <body>
     <div id="preloader" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: var(--bg-deep); z-index: 99999; display: flex; align-items: center; justify-content: center; transition: opacity 0.8s ease, visibility 0.8s ease;">
       <div style="text-align: center;">
@@ -92,7 +93,7 @@
     
     <header class="header">
       <a href="/" class="logo-link hover-target">
-        <img src="/image.png" alt="SHEES Steel Doors" class="logo">
+        <img src="/logo.jpeg" alt="SHEES Steel Doors" class="logo">
       </a>
       
       <div class="hamburger hover-target" id="hamburger">
@@ -118,7 +119,17 @@
 
 
     <main>
-      <section class="section" style="padding-top: 25vh; min-height: 100vh;">
+      <section class="hero" id="hero">
+        <div class="parallax-bg" style="background-image: url('/images/products/door_5_1.jpeg'); position: absolute; top: -15%; left: 0; width: 100%; height: 130%; background-size: cover; background-position: center; z-index: -2; will-change: transform;"></div>
+        <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, var(--bg-deep) 0%, rgba(10, 10, 10, 0.4) 50%, rgba(10, 10, 10, 0.8) 100%); z-index: -1;"></div>
+        <div class="hero-content container" style="text-align: center;">
+          <h1 class="hero-title text-huge reveal-text" style="margin: 0 auto; max-width: 100%;">
+            <span><span>GALLERY</span></span>
+          </h1>
+        </div>
+      </section>
+      
+      <section class="section" style=" min-height: 100vh;">
         <div class="container">
           <h1 class="text-large reveal-text" style="text-align: center;"><span><span>THE GALLERY.</span></span></h1>
           

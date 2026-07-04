@@ -43,7 +43,8 @@
         "item": "https://sheesdoors.com/index.html"
       }]
     }
-    </script></head>
+    </script>  <link rel="icon" type="image/jpeg" href="/logo.jpeg">
+</head>
   <body>
     <div id="preloader" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: var(--bg-deep); z-index: 99999; display: flex; align-items: center; justify-content: center; transition: opacity 0.8s ease, visibility 0.8s ease;">
       <div style="text-align: center;">
@@ -72,7 +73,7 @@
     
     <header class="header">
       <a href="/" class="logo-link hover-target">
-        <img src="/image.png" alt="SHEES Steel Doors" class="logo">
+        <img src="/logo.jpeg" alt="SHEES Steel Doors" class="logo">
       </a>
       
       <div class="hamburger hover-target" id="hamburger">
@@ -122,43 +123,107 @@
         <style>@keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0) translateX(-50%);} 40% {transform: translateY(-10px) translateX(-50%);} 60% {transform: translateY(-5px) translateX(-50%);} }</style>
       </section>
 
-      <!-- Customer Testimonials -->
-      <section class="section" style="background-color: var(--bg-graphite); padding: 10vw 0;">
-        <div class="container">
-          <h2 class="text-large reveal-text" style="text-align: center; margin-bottom: 5rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5em; line-height: 1;"><span><span>CLIENT</span></span> <span><span>TESTIMONIALS</span></span></h2>
-          
-          <div class="testimonial-slider" style="position: relative; overflow: hidden; max-width: 800px; margin: 0 auto; min-height: 300px;">
-            <!-- Slide 1 -->
-            <div class="testimonial-slide" style="text-align: center; position: absolute; top: 0; left: 0; width: 100%; transition: opacity 0.5s ease; opacity: 1; z-index: 2; pointer-events: auto;">
-              <div style="color: #FFD700; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
-              <p class="text-medium" style="font-style: italic; margin-bottom: 2rem; font-size: 1.5rem;">"The Obsidian door transformed our architectural build. It feels impenetrable yet perfectly elegant. SHEES delivered beyond expectations."</p>
-              <h4 style="font-family: var(--font-heading); text-transform: uppercase;">- Rajesh V., Architect</h4>
-            </div>
-            <!-- Slide 2 -->
-            <div class="testimonial-slide" style="text-align: center; position: absolute; top: 0; left: 0; width: 100%; transition: opacity 0.5s ease; opacity: 0; z-index: 1; pointer-events: none;">
-              <div style="color: #FFD700; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
-              <p class="text-medium" style="font-style: italic; margin-bottom: 2rem; font-size: 1.5rem;">"We wanted maximum security without compromising the modern aesthetic of our villa. The Zenith provided exactly that."</p>
-              <h4 style="font-family: var(--font-heading); text-transform: uppercase;">- Meera S., Homeowner</h4>
-            </div>
-            <!-- Slide 3 -->
-            <div class="testimonial-slide" style="text-align: center; position: absolute; top: 0; left: 0; width: 100%; transition: opacity 0.5s ease; opacity: 0; z-index: 1; pointer-events: none;">
-              <div style="color: #FFD700; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
-              <p class="text-medium" style="font-style: italic; margin-bottom: 2rem; font-size: 1.5rem;">"The installation was seamless and the craftsmanship is truly aerospace-grade. Highly recommended for luxury properties."</p>
-              <h4 style="font-family: var(--font-heading); text-transform: uppercase;">- Vikram K., Developer</h4>
-            </div>
+      <!-- Why Choose SHEES -->
+      <section class="section why-choose-section" style="min-height: 100vh; display: flex; align-items: center; background-color: var(--bg-deep);">
+        <div class="container grid why-choose-grid" style="grid-template-columns: 1fr 1fr; gap: 5vw; align-items: center;">
+          <div class="why-choose-text">
+            <h2 class="text-large reveal-text" style="margin-bottom: 2rem;"><span><span>WHY CHOOSE</span></span> <span><span>SHEES</span></span></h2>
+            <p class="text-body fade-in-up" style="margin-bottom: 1.5rem; font-size: 1.25rem;">We forge more than just metal doors; we engineer peace of mind. Every SHEES door is a masterpiece of security and architectural elegance.</p>
+            <ul class="text-body fade-in-up" style="list-style: none; padding: 0; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+              <li style="display: flex; align-items: center; gap: 1rem;"><span style="color: var(--accent-blue);">◆</span> Unyielding Security</li>
+              <li style="display: flex; align-items: center; gap: 1rem;"><span style="color: var(--accent-blue);">◆</span> Precision Engineering</li>
+              <li style="display: flex; align-items: center; gap: 1rem;"><span style="color: var(--accent-blue);">◆</span> Bespoke Luxury Design</li>
+            </ul>
           </div>
-          
-          <div style="text-align: center; margin-top: 2rem;">
-            <button id="prev-test" class="hover-target" style="background: none; border: 1px solid rgba(255,255,255,0.2); color: white; padding: 0.5rem 1.5rem; border-radius: 50px; cursor: none; margin-right: 1rem;">← Prev</button>
-            <button id="next-test" class="hover-target" style="background: none; border: 1px solid rgba(255,255,255,0.2); color: white; padding: 0.5rem 1.5rem; border-radius: 50px; cursor: none;">Next →</button>
+          <div class="image-expand-wrapper why-choose-image" style="height: 70vh; border-radius: 10px;">
+            <img src="/images/products/door_2_1.jpeg" alt="Premium Metal Door" class="image-expand-inner" style="width: 100%; height: 100%;">
           </div>
         </div>
       </section>
-      
+
+      <!-- End-to-End Services -->
+      <section class="section services-section" style="background-color: var(--bg-graphite); min-height: 100vh; padding: 10vw 0;">
+        <div class="container">
+          <h2 class="text-large reveal-text" style="text-align: center; margin-bottom: 5rem;"><span><span>END-TO-END</span></span> <span><span>SERVICES</span></span></h2>
+          <div class="services-list" style="display: flex; flex-direction: column; gap: 2rem;">
+            <div class="service-item fade-in-up hover-target" style="padding: 3rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; transition: all 0.4s ease; background: rgba(0,0,0,0.2);">
+              <h3 class="text-medium" style="color: var(--text-white); margin-bottom: 1rem;">01. Custom Fabrication</h3>
+              <p class="text-body">Bespoke metal door designs tailored to your architectural vision using aerospace-grade materials.</p>
+            </div>
+            <div class="service-item fade-in-up hover-target" style="padding: 3rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; transition: all 0.4s ease; background: rgba(0,0,0,0.2);">
+              <h3 class="text-medium" style="color: var(--text-white); margin-bottom: 1rem;">02. Precision Installation</h3>
+              <p class="text-body">Flawless execution by our master technicians ensuring perfect alignment and absolute security.</p>
+            </div>
+            <div class="service-item fade-in-up hover-target" style="padding: 3rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; transition: all 0.4s ease; background: rgba(0,0,0,0.2);">
+              <h3 class="text-medium" style="color: var(--text-white); margin-bottom: 1rem;">03. Lifecycle Maintenance</h3>
+              <p class="text-body">Dedicated support to keep your premium steel doors operating smoothly for decades.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section class="section process-section" style="position: relative; padding: 15vw 0; background-color: var(--bg-deep);">
+        <div class="container">
+          <h2 class="text-large reveal-text" style="text-align: center; margin-bottom: 10rem;"><span><span>OUR</span></span> <span><span>PROCESS</span></span></h2>
+          <div style="position: relative; max-width: 800px; margin: 0 auto;">
+            <div class="process-line" style="position: absolute; top: 0; left: 20px; width: 2px; height: 100%; background: rgba(255,255,255,0.1);">
+              <div class="process-line-progress" style="width: 100%; height: 0%; background: var(--accent-blue);"></div>
+            </div>
+            <div class="process-steps" style="display: flex; flex-direction: column; gap: 8rem;">
+              <div class="process-step fade-in-up" style="position: relative; padding-left: 60px;">
+                <div style="position: absolute; left: 14px; top: 5px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent-blue); box-shadow: 0 0 10px var(--accent-blue);"></div>
+                <h3 class="text-medium" style="color: var(--text-white); margin-bottom: 1rem;">Consultation</h3>
+                <p class="text-body">We begin with understanding your architectural requirements and security needs.</p>
+              </div>
+              <div class="process-step fade-in-up" style="position: relative; padding-left: 60px;">
+                <div style="position: absolute; left: 14px; top: 5px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent-blue); box-shadow: 0 0 10px var(--accent-blue);"></div>
+                <h3 class="text-medium" style="color: var(--text-white); margin-bottom: 1rem;">Engineering & Design</h3>
+                <p class="text-body">Translating concepts into precise blueprints with uncompromised structural integrity.</p>
+              </div>
+              <div class="process-step fade-in-up" style="position: relative; padding-left: 60px;">
+                <div style="position: absolute; left: 14px; top: 5px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent-blue); box-shadow: 0 0 10px var(--accent-blue);"></div>
+                <h3 class="text-medium" style="color: var(--text-white); margin-bottom: 1rem;">Craftsmanship</h3>
+                <p class="text-body">Meticulous fabrication using state-of-the-art machinery and skilled artisans.</p>
+              </div>
+              <div class="process-step fade-in-up" style="position: relative; padding-left: 60px;">
+                <div style="position: absolute; left: 14px; top: 5px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent-blue); box-shadow: 0 0 10px var(--accent-blue);"></div>
+                <h3 class="text-medium" style="color: var(--text-white); margin-bottom: 1rem;">Installation</h3>
+                <p class="text-body">Seamless, secure deployment by our expert installation team.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Upgraded Client Reviews -->
+      <section class="section reviews-section" style="background-color: var(--bg-graphite); min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;">
+        <div class="container" style="position: relative; z-index: 2;">
+          <h2 class="text-large reveal-text" style="margin-bottom: 4rem; text-align: center;"><span><span>CLIENT</span></span> <span><span>REVIEWS</span></span></h2>
+          <div class="review-slider" style="position: relative; min-height: 400px; text-align: center;">
+            <div class="review-slide" style="position: absolute; top: 0; left: 0; width: 100%; opacity: 1; transition: opacity 0.8s ease; z-index: 2; pointer-events: auto;">
+              <p class="text-large" style="font-size: clamp(1.5rem, 4vw, 3rem); font-style: italic; margin-bottom: 2rem; color: var(--text-white); text-transform: none; font-family: var(--font-body); font-weight: 300;">"An absolute masterpiece of modern engineering. The Obsidian door is the crown jewel of our home."</p>
+              <h4 class="text-medium" style="font-size: 1.2rem; color: var(--accent-blue); text-transform: uppercase;">- Rajesh V., Architect</h4>
+            </div>
+            <div class="review-slide" style="position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: opacity 0.8s ease; z-index: 1; pointer-events: none;">
+              <p class="text-large" style="font-size: clamp(1.5rem, 4vw, 3rem); font-style: italic; margin-bottom: 2rem; color: var(--text-white); text-transform: none; font-family: var(--font-body); font-weight: 300;">"Incredible craftsmanship and flawless installation. It feels like stepping into a fortress of luxury."</p>
+              <h4 class="text-medium" style="font-size: 1.2rem; color: var(--accent-blue); text-transform: uppercase;">- Meera S., Homeowner</h4>
+            </div>
+            <div class="review-slide" style="position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: opacity 0.8s ease; z-index: 1; pointer-events: none;">
+              <p class="text-large" style="font-size: clamp(1.5rem, 4vw, 3rem); font-style: italic; margin-bottom: 2rem; color: var(--text-white); text-transform: none; font-family: var(--font-body); font-weight: 300;">"SHEES delivered beyond our expectations. Aerospace-grade security wrapped in sheer elegance."</p>
+              <h4 class="text-medium" style="font-size: 1.2rem; color: var(--accent-blue); text-transform: uppercase;">- Vikram K., Developer</h4>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 2rem;">
+            <button id="prev-review" class="hover-target" style="background: none; border: 1px solid rgba(255,255,255,0.2); color: white; padding: 1rem 2rem; border-radius: 50px; cursor: none; margin-right: 1rem; text-transform: uppercase; letter-spacing: 0.1em; transition: all 0.3s ease;">Prev</button>
+            <button id="next-review" class="hover-target" style="background: none; border: 1px solid rgba(255,255,255,0.2); color: white; padding: 1rem 2rem; border-radius: 50px; cursor: none; text-transform: uppercase; letter-spacing: 0.1em; transition: all 0.3s ease;">Next</button>
+          </div>
+        </div>
+      </section>
+
       <script>
-        // Simple Vanilla JS Slider Logic
         document.addEventListener("DOMContentLoaded", () => {
-          let slides = document.querySelectorAll('.testimonial-slide');
+          let slides = document.querySelectorAll('.review-slide');
           let current = 0;
           function showSlide(index) {
             slides.forEach((s, i) => {
@@ -167,28 +232,37 @@
               s.style.pointerEvents = i === index ? 'auto' : 'none';
             });
           }
-          document.getElementById('next-test')?.addEventListener('click', () => {
+          document.getElementById('next-review')?.addEventListener('click', () => {
             current = (current + 1) % slides.length;
             showSlide(current);
           });
-          document.getElementById('prev-test')?.addEventListener('click', () => {
+          document.getElementById('prev-review')?.addEventListener('click', () => {
             current = (current - 1 + slides.length) % slides.length;
             showSlide(current);
           });
+          document.querySelectorAll('#prev-review, #next-review').forEach(btn => {
+            btn.addEventListener('mouseenter', () => btn.style.background = 'rgba(255,255,255,0.1)');
+            btn.addEventListener('mouseleave', () => btn.style.background = 'none');
+          });
         });
       </script>
-</main>
 
-    
-    
-    <!-- Global Pre-Footer CTA -->
-    <section class="section" style="background: linear-gradient(135deg, var(--bg-graphite) 0%, var(--bg-deep) 100%); border-top: 1px solid rgba(0,229,255,0.2); padding: 5vw 0; text-align: center;">
-      <div class="container">
-        <h2 class="text-medium reveal-text" style="margin-bottom: 2rem;"><span><span>READY TO SECURE</span></span><span><span>YOUR ENTRANCE?</span></span></h2>
-        <p class="text-body" style="margin: 0 auto 2rem; max-width: 600px;">Connect with our architectural specialists today for a bespoke consultation and discover how SHEES can elevate your property.</p>
-        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-          <a href="tel:+919550209607" class="hover-target glow-cta" style="padding: 1rem 3rem; background: rgba(255,255,255,0.05); border: 1px solid var(--support-silver); border-radius: 50px;">Call: +91 9550209607</a>
-          <a href="/contact.html" class="hover-target glow-cta" style="padding: 1rem 3rem; background: rgba(0, 229, 255, 0.1); border: 1px solid var(--accent-blue); border-radius: 50px; color: white;">Request a Callback</a>
+    </main>
+
+    <!-- Upgraded CTA -->
+    <section class="section cta-premium" style="position: relative; min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; background-color: var(--bg-deep);">
+      <div class="cta-bg layer-visual" style="position: absolute; top: -10%; left: -10%; width: 120%; height: 120%; background-image: url('/images/products/door_3_1.jpeg'); background-size: cover; background-position: center; filter: grayscale(100%) brightness(0.3); z-index: 1;"></div>
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, var(--bg-deep) 0%, transparent 100%); z-index: 2;"></div>
+      <div class="container" style="position: relative; z-index: 3;">
+        <h2 class="text-huge reveal-text" style="margin-bottom: 2rem;">
+          <span><span>READY TO</span></span>
+          <span><span>BUILD YOUR</span></span>
+          <span><span style="color: var(--accent-blue);">METAL DOOR?</span></span>
+        </h2>
+        <div class="fade-in-up" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 3rem;">
+          <a href="/contact.html" class="floating-action hover-target" style="padding: 1.2rem 4rem; background: var(--text-white); color: var(--bg-deep); border-radius: 50px; font-weight: bold; font-size: 1.1rem; transition: transform 0.3s ease; text-transform: uppercase;">
+            Start Consultation
+          </a>
         </div>
       </div>
     </section>

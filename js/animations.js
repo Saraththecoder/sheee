@@ -109,6 +109,39 @@ export function initAnimations() {
     }
   );
 
+  // Image Expansion on Scroll
+  const expandWrappers = document.querySelectorAll('.image-expand-wrapper');
+  expandWrappers.forEach(wrapper => {
+    const inner = wrapper.querySelector('.image-expand-inner');
+    if (inner) {
+      gsap.to(inner, {
+        scale: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: wrapper,
+          start: 'top bottom',
+          end: 'center center',
+          scrub: true
+        }
+      });
+    }
+  });
+
+  // Global Parallax Backgrounds
+  const parallaxBgs = document.querySelectorAll('.parallax-bg');
+  parallaxBgs.forEach(bg => {
+    gsap.to(bg, {
+      yPercent: 30,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: bg.parentElement,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true
+      }
+    });
+  });
+
   // Global Scroll Progress Bar
   gsap.to('.scroll-progress', {
     width: '100%',
@@ -126,5 +159,17 @@ export function initAnimations() {
     start: 'top -50',
     end: 99999,
     toggleClass: {className: 'scrolled', targets: '.header'}
+  });
+
+  // Process Timeline Animation
+  gsap.to('.process-line-progress', {
+    height: '100%',
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.process-steps',
+      start: 'top center',
+      end: 'bottom center',
+      scrub: true
+    }
   });
 }
