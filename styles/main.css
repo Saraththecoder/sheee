@@ -67,9 +67,9 @@ h1, h2, h3, h4, h5, h6, .heading {
 }
 
 .text-huge {
-  font-size: clamp(4rem, 10vw, 12rem);
+  font-size: clamp(3rem, 7vw, 8rem);
   letter-spacing: -0.01em;
-  line-height: 0.95;
+  line-height: 1.05;
 }
 
 .text-large {
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6, .heading {
 
 .hero-content {
   z-index: 1;
-  margin-top: 10vh;
+  margin-top: 15vh;
 }
 
 .hero-sub {
